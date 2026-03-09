@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App | JS Assignment 6</title>
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body class="h-screen text-neutral-50 bg-teal-500 pt-10 px-5">
+    <section id="Hero" class="flex flex-col items-center">
+      <div id="title" class="flex flex-col">
+        <h1 class="text-5xl sm:text-7xl tracking-tighter mb-3">Weather App</h1>
+        <h2
+          class="font-light tracking-tight border text-center text-xl sm:text-3xl"
+        >
+          SMIT JS Assignment #11
+        </h2>
+      </div>
+      <div
+        id="card-cont"
+        class="max-w-100 sm:w-100 py-6 sm:py-8 bg-neutral-50 rounded-2xl sm:rounded-4xl shadow mt-10 flex flex-col items-center justify-center text-neutral-600 sm:text-xl"
+      >
+        <div
+          id="city-name-cont"
+          class="w-[86%] border py-3 px-4 sm:p-4 border-neutral-300 rounded-xl sm:rounded-2xl"
+        >
+          <label for="city-name" class="ml-2"
+            >Enter the name of your city:</label
+          >
+          <input
+            type="text"
+            id="city-name"
+            placeholder="Peshawar, Pakistan"
+            class="pl-4 outline-none rounded-xl bg-neutral-200 w-full my-1 h-7 sm:h-8 caret-teal-500"
+          />
+        </div>
+        <p class="py-2 text-neutral-300 text-[18px] font-bold tracking-tighter">
+          OR
+        </p>
+        <div
+          id="coordinates-cont"
+          class="w-[86%] border py-3 px-4 sm:p-4 border-neutral-300 rounded-xl sm:rounded-2xl mb-5"
+        >
+          <div id="longitude-cont" class="mb-3">
+            <label for="longitude" class="ml-2">Enter the longitude:</label>
+            <input
+              type="text"
+              id="longitude"
+              placeholder="34.0083°"
+              class="pl-4 outline-none rounded-xl bg-neutral-200 w-full my-1 h-7 sm:h-8 caret-teal-500"
+            />
+          </div>
+          <div id="latitude-cont">
+            <label for="latitude" class="ml-2">Enter the latitude:</label>
+            <input
+              type="text"
+              id="latitude"
+              placeholder="71.5189°"
+              class="pl-4 outline-none rounded-xl bg-neutral-200 w-full my-1 h-7 sm:h-8 caret-teal-500"
+            />
+          </div>
+        </div>
+        <button
+          class="bg-teal-500 text-neutral-50 w-[86%] h-8 rounded-xl hover:bg-teal-400 active:scale-95 transition-colors duration-300 cursor-pointer [-webkit-tap-highlight-color:transparent]"
+        >
+          Search
+        </button>
+      </div>
+    </section>
+  </body>
+</html>
