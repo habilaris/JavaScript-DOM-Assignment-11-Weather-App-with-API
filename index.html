@@ -7,9 +7,14 @@
     <link rel="stylesheet" href="dist/output.css" />
     <link rel="shortcut icon" href="tailwindcss.ico" type="image/x-icon" />
   </head>
-  <body class="h-screen text-neutral-50 bg-teal-500 pt-10 px-5">
-    <section id="Hero" class="flex flex-col items-center">
-      <div id="title" class="flex flex-col">
+  <body class="h-screen text-neutral-50 bg-teal-500">
+    <img
+      src="images/mesh.png"
+      alt="mesh"
+      class="absolute h-screen w-screen opacity-5 hidden sm:block"
+    />
+    <section id="Hero" class="flex flex-col items-center pt-10 px-5">
+      <div id="title" class="flex flex-col z-10">
         <h1 class="text-5xl sm:text-7xl tracking-tighter mb-3">Weather App</h1>
         <h2
           class="font-light tracking-tight border text-center text-xl sm:text-3xl"
@@ -19,7 +24,7 @@
       </div>
       <div
         id="card-cont"
-        class="max-w-100 sm:w-100 py-6 sm:py-8 bg-neutral-50 rounded-2xl sm:rounded-4xl shadow mt-10 flex flex-col items-center justify-center text-neutral-600 sm:text-xl"
+        class="max-w-100 sm:w-100 py-6 sm:py-8 bg-neutral-50 rounded-2xl sm:rounded-4xl shadow mt-10 flex flex-col items-center justify-center text-neutral-600 sm:text-xl z-20"
       >
         <div
           id="city-name-cont"
@@ -68,5 +73,8 @@
         </button>
       </div>
     </section>
+
+    <!-- JS -->
+    <script src="script.js"></script>
   </body>
 </html>
