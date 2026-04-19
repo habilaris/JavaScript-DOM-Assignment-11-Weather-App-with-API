@@ -13,7 +13,7 @@
       alt="mesh"
       class="absolute h-screen w-screen opacity-5 hidden sm:block"
     />
-    <section id="Hero" class="flex flex-col items-center pt-10 px-5">
+    <section id="Hero" class="flex flex-col items-center pt-10 px-5 h-full">
       <div id="title" class="flex flex-col z-10">
         <h1 class="text-5xl sm:text-7xl tracking-tighter mb-3">Weather App</h1>
         <h2
@@ -67,14 +67,16 @@
           </div>
         </div>
         <button
-          class="bg-teal-500 text-neutral-50 w-[86%] h-8 rounded-xl hover:bg-teal-400 active:scale-95 transition-colors duration-300 cursor-pointer [-webkit-tap-highlight-color:transparent]"
+          class="bg-teal-500 text-neutral-50 w-[86%] h-8 rounded-xl hover:bg-teal-400 active:scale-95 transition-colors duration-1000 cursor-pointer [-webkit-tap-highlight-color:transparent]"
         >
           Search
         </button>
       </div>
     </section>
+    <footer class="text-center">Developed by HABIL ARIS &copy; 2026</footer>
+    <div id="weather-display"></div>
 
     <!-- JS -->
-    <script src="script.js"></script>
+    <script src="script.js" type="module"></script>
   </body>
 </html>
